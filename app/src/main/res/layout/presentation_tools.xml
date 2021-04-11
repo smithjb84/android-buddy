@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/sketch_tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gutter"
+    app:layout_constraintBottom_toBottomOf="@id/group"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/lineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_insertmodel"
+            android:tag="PublisherInsertModelCmd" />
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/rec1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_newstory"
+            android:tag="PublisherNewStoryboardCmd"/>
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/rec2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_newsnap"
+            android:tag="PublisherCreateViewCmd"/>
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/circButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_tweak"
+            android:tag="PublisherTweakCmd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/dimButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_opacity"
+            android:tag="PublisherComponentOpacityCmd"/>
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/projectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_capture"
+            android:tag="PublisherUpdateViewCameraCmd"/>
+
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/pointButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_createdrawing"
+            android:tag="PublisherCreateDrawingViewCmd"/>
+
+        <com.jamie.imouse.ShortcutButton
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/gutter"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:scaleType="centerInside"
+            android:src="@drawable/ici_video"
+            android:tag="PublisherPublishVideoCmd"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
